@@ -1,0 +1,119 @@
+/*------------------------Static-No-Need-to-change------------------------*/
+@font-face {
+  font-family: 'magical';
+  src: url('/font/kawoszeh.ttf') format('truetype');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#threejs-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.layout {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.Button-Text {
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(255, 215, 0, 0.3);
+  color: white;
+  border: 5px solid transparent;
+  border-image: linear-gradient(to right, #D4AF37, #FFD700, #D4AF37) 1;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  font-family: 'magical';
+  transition: opacity 1s ease-in-out;
+}
+
+.button {
+  width: 15%;
+}
+
+.button:hover .Button-Text {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+#middle {
+  width: 70%;
+  display: flex;
+  opacity: 0;
+}
+
+/*---------------------------------------------Dynamic---------------------------------------------*/
+#Intro-Container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+#Intro-Img-Container {
+  width: 60%;
+  height: 100%;
+}
+
+#Intro-Img {
+  height: 35%;
+  position: relative;
+  top: 15%;
+  left: 40%;
+  border: 5px solid transparent;
+  border-image: linear-gradient(to right, #D4AF37, #FFD700, #D4AF37) 1;
+  
+}
+
+#Intro-Text-Container {
+  width: 40%;
+  position: relative;
+  margin-right: 5%;
+  margin-left: 5%;
+  top: -10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#Intro-Text {
+  font-size: 2em;
+  font-family: 'magical';
+  user-select: none;
+}
+
+#Python-Text {
+  font-size: xx-large;
+  font-family: 'magical';
+  user-select: none;
+}
+
+#Java-Text {
+  font-size: xx-large;
+  font-family: 'magical';
+  user-select: none;
+}
